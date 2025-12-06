@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guidelines - Car Insurance Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            color: white;
+            overflow-x: hidden;
+            background: linear-gradient(145deg, #001f4d, #004080); /* Dark blue gradient */
+        }
+
+        nav {
+            width: 100%;
+            background: rgba(0, 38, 84, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 10px;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #bcd8ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 120px auto 60px auto; /* space for navbar */
+            padding: 25px;
+            background: rgba(0,0,0,0.45);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: #FF7A30;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #e0e7ff;
+            font-weight: 500;
+        }
+
+        .content p strong {
+            color: #fff3b0;
+        }
+
+        .content ul {
+            margin: 15px 0 25px 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .content ul li::before {
+            content: "✅ ";
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 768px) {
+            .content {
+                margin: 140px 15px 60px 15px;
+            }
+            .content h1 {
+                font-size: 1.6rem;
+            }
+            .content p, .content ul li {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav a {
+                margin: 5px 10px;
+                font-size: 0.9rem;
+            }
+            .content {
+                margin: 160px 10px 40px 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/about">ℹ️ About</a>
+        <a href="/guidelines">📜 Guidelines</a>
+        <a href="/predict">🔍 Predict</a>
+    </nav>
+
+    <section class="content">
+        <h1>Guidelines for Detecting Insurance Fraud 🚦</h1>
+        <p>
+            Insurance fraud costs billions each year and affects both companies and genuine customers.
+            Detecting fraud ensures fairness, transparency, and efficiency in claim processing.
+        </p>
+        <p>
+            Follow these key guidelines when reviewing claims:
+        </p>
+        <ul>
+            <li>Analyze claim patterns over time and history of the claimant</li>
+            <li>Verify accident details with independent sources</li>
+            <li>Check for inconsistencies in reported damages or injuries</li>
+            <li>Use AI models to highlight suspicious claims automatically</li>
+            <li>Prioritize high-risk claims for manual review</li>
+            <li>Maintain detailed documentation for all investigations</li>
+            <li>Educate staff to identify red flags and unusual behaviors</li>
+            <li>Regularly update AI models with new data to improve detection</li>
+        </ul>
+        <p>
+            🌟 By following these guidelines, insurance providers can <strong>protect genuine customers</strong>, <strong>reduce losses</strong>, and ensure a trustworthy claims process.
+            Remember, AI assists humans but decisions must consider context and expertise. 🚀
+        </p>
+    </section>
+
+</body>
+</html>

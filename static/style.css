@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f6f7fb;
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    background: #0077b6;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+}
+
+.btn {
+    background: white;
+    color: #0077b6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-section {
+    width: 50%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    background: #0077b6;
+    color: white;
+    cursor: pointer;
+}
+
+.result.success {
+    background: #c3f3c0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result.danger {
+    background: #ffb3b3;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}

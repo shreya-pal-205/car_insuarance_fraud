@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Car Insurance Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* GLOBAL FIXES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            color: white;
+            overflow-x: hidden;
+            background:
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+        }
+
+        nav {
+            width: 100%;
+            background: rgba(0, 38, 84, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 10px;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #bcd8ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 120px auto 60px auto; /* top margin for fixed navbar */
+            padding: 20px;
+            background: rgba(0,0,0,0.45);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #FF7A30;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #e0e7ff;
+            font-weight: 500;
+        }
+
+        .content p strong {
+            color: #fff3b0;
+        }
+
+        .content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 768px) {
+            .content {
+                margin: 140px 15px 60px 15px;
+            }
+            .content h1 {
+                font-size: 1.6rem;
+            }
+            .content p, .content ul li {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav a {
+                margin: 5px 10px;
+                font-size: 0.9rem;
+            }
+            .content {
+                margin: 160px 10px 40px 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/about">ℹ️ About</a>
+        <a href="/guidelines">📜 Guidelines</a>
+        <a href="/predict">🔍 Predict</a>
+    </nav>
+
+    <section class="content">
+        <h1>About This Project 🚗💡</h1>
+        <p>
+            Welcome to our <strong>Car Insurance Fraud Detection</strong> system!
+            Insurance fraud costs companies billions of dollars every year. With the power of <strong>AI & Machine Learning</strong>, we aim to detect fake or exaggerated insurance claims efficiently.
+        </p>
+        <p>
+            This platform helps insurance providers:
+        </p>
+        <ul>
+            <li>✅ Identify fraudulent claims early to prevent financial loss</li>
+            <li>✅ Process genuine claims faster and more accurately</li>
+            <li>✅ Improve trust between customers and companies</li>
+            <li>✅ Automate manual review tasks for claim assessments</li>
+        </ul>
+        <p>
+            Our AI model analyzes multiple features of a claim, such as:
+        </p>
+        <ul>
+            <li>Driver history and previous claims</li>
+            <li>Accident details and damages</li>
+            <li>Claim amounts and patterns</li>
+            <li>Suspicious trends and anomalies</li>
+        </ul>
+        <p>
+            🌟 With this project, we aim to bring transparency, fairness, and efficiency to the insurance industry.
+            AI is not here to replace humans but to assist and empower better decision-making. 🚀
+        </p>
+    </section>
+
+</body>
+</html>
