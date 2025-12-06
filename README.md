@@ -1,6 +1,7 @@
 **Deploy Link** -> https://car-insuarance-fraud.onrender.com
 
-**Car Insurance Fraud Detection System** 🚗🔍
+**Car Insurance Fraud Detection System 🚗🔍**
+
 This project is a Machine Learning–powered Fraud Detection System designed to identify potential car insurance fraud based on user-submitted claim details. It helps insurers analyze claim patterns and flag suspicious activity, reducing financial losses and improving decision-making.
 
 🔧**Tech Stack Used**
